@@ -1,76 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cristiano Ronaldo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        img, video {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
 </head>
 
 <body>
-  
+    <header>
         <h1>Cristiano Ronaldo</h1>
         <hr>
-        <pre>
-        O <strong>Portugues</strong> <del>da história.</del>
-        <a href="https://www.youtube.com/watch?v=OUKGsb8CpF8">Assita aqui</a>
-        </pre>
-        <ol>
-            </li>Campeão Mundial<li>
-            </li>Campeão da Champions<li>
-            </li>Bola de Ouro<li>
-            </li> <hidden>Chuteira de Ouro</hidden> <li>
-        </ol>
-        <img src="midias/papaicris.jpg" height="300" name="CR7" title="Imagens">
+    </header>
+
+    <section>
+        <p>O <strong>Português</strong> <del>da história.</del></p>
+        <a href="https://www.youtube.com/watch?v=OUKGsb8CpF8" target="_blank">Assista aqui</a>
         <hr>
+        <ul>
+            <li>Campeão Mundial</li>
+            <li>Campeão da Champions</li>
+            <li>Bola de Ouro</li>
+            <li>Chuteira de Ouro</li>
+        </ul>
+        <img src="midias/papaicris.jpg" alt="Cristiano Ronaldo" height="300">
+        <hr>
+    </section>
 
+    <section>
+        <form method="get">
+            <label for="select-get">Escolha uma opção:</label>
+            <select id="select-get" name="options">
+                <option>Primeira opção</option>
+                <option>Segunda opção</option>
+                <option hidden>Terceira opção</option>
+            </select>
+            <hr>
+            <label for="textarea-get">DIGA SEU NOME:</label>
+            <textarea id="textarea-get" name="nome"></textarea>
+            <input id="input-get" name="nome" type="text">
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+    </section>
 
+    <section>
+        <form method="post">
+            <label for="select-post">Escolha uma opção:</label>
+            <select id="select-post" name="options">
+                <option>Primeira opção</option>
+                <option>Segunda opção</option>
+                <option hidden>Terceira opção</option>
+            </select>
+            <hr>
+            <label for="textarea-post">DIGA SEU NOME:</label>
+            <textarea id="textarea-post" name="nome"></textarea>
+            <input id="input-post" name="nome" type="text">
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+    </section>
 
-    <for method="get">
-      
-        <select>
-            <option>Primeira opção</option>
-            <option>Segunda opção</option>
-            <option hidden>Segunda opção</option>
-        </select>
- 
-    <hr>
-        <textarea>DIGA SEU NOME:</textarea>
-        <input name="nome">
-        <button type="submit">Enviar</button>
-
-    </for>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
-    <for method="post">
-       
-        <select>
-            <option>Primeira opção</option>
-            <option>Segunda opção</option>
-            <option hidden>Segunda opção</option>
-        </select>
-    
-    <hr>
-        <textarea>DIGA SEU NOME:</textarea>
-        <input name="nome">
-        <button type="submit">Enviar</button>
-
-    </for>
-
-    <h1>tunnel:</h1>
-    <video controls width="250" name="tunnel">
-           <source src="midias/tunnel.mp4" type="video/mp4" />
-    </video>
-    <figure>
-        <figcaption>Listen to higher:</figcaption>
-        <audio controls src="midias/higher.mp3">
-          </audio>
-      </figure>
-      
+    <section>
+        <h2>Tunnel:</h2>
+        <video controls width="250" name="tunnel">
+            <source src="midias/tunnel.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <hr>
+        <figure>
+            <figcaption>Listen to higher:</figcaption>
+            <audio controls src="midias/higher.mp3">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+        </figure>
+    </section>
+</body>
 
 </html>
